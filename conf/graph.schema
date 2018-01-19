@@ -1,0 +1,53 @@
+vertexLabel:
+{
+	"labels" : [
+		"enterprise", "person", "product", "investment", 
+		"tag", "event", "job"]
+}
+
+edgeLabel:
+{
+	"labels" : [
+		"subClass", "instance", 
+		"股东", "创始人", "行业门类", "行业小类", "省份", "地区", "主要标签", "分支机构", "高管", 
+		"企业标签", "相似企业", "企业行业标签", "企业背景标签", "企业其他标签", 
+		"投资企业", "投资产品", "投资机构标签", 
+		"现任机构", "个人履历", "曾任机构", "人物标签", "人物行业标签", "人物背景标签", "人物其他标签",  
+		"投资方", "融资方", "融资产品", "融资事件标签", 
+		"任职机构", "任职人", 
+		"发布公司", "职位标签", 
+		"开发商", "产品标签"
+	]
+}
+
+property:
+{
+	"pks" : [
+		{"name" : "v_id", "type" : "long"}, 
+		{"name" : "v_type", "type" : "int"}, 
+		{"name" : "v_pids", "type" : "long", "cardinality" : "set"},
+		{"name" : "name", "type" : "string"},
+		{"name" : "abstracts", "type" : "string"},
+		{"name" : "ent_register_capital", "type" : "string"},
+		{"name" : "ent_location", "type" : "string"},
+		{"name" : "ent_status", "type" : "string"},
+		{"name" : "ent_person", "type" : "string"},
+		{"name" : "ent_type", "type" : "string"},
+		{"name" : "ent_corporator", "type" : "string"},
+		{"name" : "ent_establish_date", "type" : "string"},
+		{"name" : "ent_province", "type" : "string"},
+		{"name" : "ent_city", "type" : "string"},
+		{"name" : "job_salary", "type" : "string"},
+		{"name" : "job_publish_time", "type" : "string"},
+		{"name" : "job_edu_background", "type" : "string"},
+		{"name" : "job_description", "type" : "string"},
+		{"name" : "job_work_experience", "type" : "string"},
+		{"name" : "job_recruit_num", "type" : "string"},
+		{"name" : "e_tags", "type" : "string"},
+		{"name" : "e_financed_amount", "type" : "string"},
+		{"name" : "e_financed_year", "type" : "string"},
+		{"name" : "e_financed_month", "type" : "string"},
+		{"name" : "e_financed_date", "type" : "string"},
+		{"name" : "e_financed_round", "type" : "string"}
+	]
+}
